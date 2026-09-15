@@ -5642,3 +5642,57 @@ a {
     font-size: 29px;
   }
 }
+/* =========================================================
+   EMPTY STATE - THEMED ADD NEW TASK BUTTON
+   ========================================================= */
+
+.empty-state .btn-primary,
+.empty-state button {
+  min-height: 54px;
+  padding: 13px 22px;
+  border: 1px solid #2dd4bf;
+  border-radius: 12px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  background: linear-gradient(135deg, #2dd4bf, #14b8a6);
+  color: #061312;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.2px;
+
+  cursor: pointer;
+
+  box-shadow: 0 9px 24px rgba(20, 184, 166, 0.18);
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease,
+    filter 0.22s ease;
+}
+
+.empty-state .btn-primary:hover,
+.empty-state button:hover {
+  transform: translateY(-3px);
+  filter: brightness(1.08);
+  box-shadow: 0 14px 30px rgba(20, 184, 166, 0.28);
+}
+
+.empty-state .btn-primary:active,
+.empty-state button:active {
+  transform: translateY(0);
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  .empty-state .btn-primary,
+  .empty-state button {
+    width: 100%;
+    min-height: 52px;
+    font-size: 15px;
+  }
+}
