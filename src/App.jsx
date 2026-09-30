@@ -27,6 +27,7 @@ function App() {
         <TaskProvider>
           <Routes>
 
+            {/* Authentication Pages */}
             <Route
               path="/signin"
               element={<SignIn />}
@@ -37,6 +38,7 @@ function App() {
               element={<SignUp />}
             />
 
+            {/* Protected Application */}
             <Route
               path="/"
               element={
@@ -76,6 +78,7 @@ function App() {
               />
             </Route>
 
+            {/* Unknown URL */}
             <Route
               path="*"
               element={
