@@ -91,7 +91,7 @@ function Sidebar() {
           <div className="user-mini">
 
             <div className="user-avatar">
-              {user?.name
+              {user?.username
                 ?.charAt(0)
                 .toUpperCase()}
             </div>
@@ -99,7 +99,7 @@ function Sidebar() {
             <div className="user-info">
 
               <strong>
-                {user?.name || "User"}
+                {user?.username || "User"}
               </strong>
 
               <small>
